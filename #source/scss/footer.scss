@@ -1,0 +1,157 @@
+.footer {
+  background-color: #F8F9FA;
+
+  &__container {
+  }
+
+  &__top {
+    padding: 50px 0 80px 0;
+    border-bottom: 1px solid #DCE5E2;
+    @media (max-width: $md3+px)  {
+      padding: 30px 0 60px 0;
+    }
+    @media (max-width: $md4+px)  {
+      padding: 20px 0 30px 0;
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__body {
+    display: flex;
+    @media (max-width: $md3+px) {
+      display: block;
+    }
+  }
+
+  &__column {
+
+    &_l {
+      flex: 0 1 32%;
+    }
+
+    &_b {
+      flex: 0 1 68%;
+    }
+  }
+
+  &__items {
+    padding: 0 15px 0 0;
+    @media (max-width: $md3+px)  {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__logo {
+    margin: 0 0 19px 0;
+    display: block;
+    max-width: 181px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $md3+px) {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__text {
+    max-width: 305px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19 / 16 * 100%;
+    @media (max-width: $md2+px)  {
+      font-size: 15px;
+    }
+  }
+
+  &__menu {
+  }
+}
+.menu-footer {
+  display: flex;
+  margin: 0 -14px;
+  @media (max-width: $md4+px)  {
+    flex-wrap: wrap;
+    margin: 0 -7px -18px;
+  }
+
+  &__column {
+    padding: 0 14px;
+    flex: 0 1 25%;
+    @media (max-width: $md4+px)  {
+      flex: 0 1 50%;
+      margin: 0 0 18px 0;
+      padding: 0 7px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 28 / 22 * 100%;
+    @media (max-width: $md2+px) {
+      font-size: 20px;
+    }
+    @media (max-width: $md3+px)  {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__list {
+    li {
+      &:not(:last-child) {
+        margin: 0 0 15px 0;
+        @media (max-width: $md3+px)  {
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'Inter';
+    font-size: 17px;
+    line-height: 22 / 17 * 100%;
+    color: #000000;
+    @media (max-width: $md2+px)  {
+      font-size: 16px;
+    }
+  }
+}
+
+.bottom-footer {
+
+  &__items {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $md4+px) {
+      min-height: 70px;
+      // display: block;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &__link {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding: 0 18px 0 0;
+    background-image: url('../img/ideas/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right 4px;
+  }
+}
